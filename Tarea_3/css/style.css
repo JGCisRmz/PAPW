@@ -80,3 +80,11 @@ i,spam,em,b,strong{
 ins{
     color:yellow;
 }
+
+tr:nth-child(even){
+    background-color: aqua;
+}
+
+tr:hover{
+    background-color: crimson;
+}
