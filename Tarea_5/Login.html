@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css"  href="css/style.css" />
+</head>
+<body>
+    <ul class="TopMenu">
+        <li><a href="../Tarea_4/index.html">Inicio</a></li>
+        <li><a href="#Menu">Menu</a></li>
+        <li><a href="#Ventas">Ventas</a></li>
+        <li><a href="#Galeria">Galeria</a></li>
+        <li>
+            <div class="dropdown">
+                <a href="#Categorias" class="dropbtn">Categorias</a>
+                <div class="dropdown-content">
+                        <a href="#Musica">Musica</a> 
+                        <a href="#Electronica">Electronica</a> 
+                        <a href="#Videojuegos">Videojuegos</a>
+                </div>
+            </div>
+                
+           
+        </li>
+        <li><a href="Login.html">Login</a></li>
+        <li id="derecha"><a href="../Tarea_3/index.html">Perfil</a></li>
+    </ul>
+    <br><br><br>
+    <form action="pages/ejemplo.html" method="POST" id="form1">
+        <fieldset>
+            <legend>Informacion Personal</legend>
+            <label for="name">Nombre:</label> <br>
+            <input type="text" name="Name" class="Spaced" id="Name" autofocus><br>
+            Apellidos: <br>
+            <input type="text" name="LastName" class="Spaced"><br>
+            Edad: <br> 
+            <input type="number" name="edad" id=""><br>
+            <br> Genero: <br>
+            Hombre <input type="radio" name="Genero" value="Hombre" class="notSpace">  Mujer <input type="radio" name="Genero" value="Mujer" class="notSpace"> Otros <input type="radio" name="Genero" value="Otro" class="notSpace"><br>
+            <br>
+            Email: <br>
+            <input type="email" name="correo" placeholder="TuCorreo@ejemplo.com" required class="Spaced"><br>
+            Contraseña: <br>
+            <input type="password" name="password" required placeholder="Debe de contener almenos 6 caracteres" min="6" size="20" class="Spaced"><br>
+            Confirma tu Contraseña: <br>
+            <input type="password" name="re_password" required placeholder="Confirma tu Contraseña" class="Spaced"><br>
+
+            <br><br><br>
+            Selecciona tu color favorito: <br>
+            <input type="color" name="Color"> <br>
+            Fecha de nacimiento: <br>
+            <input type="date"  name="nacimiento"><br>
+
+            Foto de perfil: <br>
+            <input type="file" name="Avatar">
+
+            <br><br>
+
+            <input type="checkbox" name="Check1" value="v1" required class="notSpace"> Acepto las condicones de uso. <br>
+            <input type="checkbox" name="Check1" value="v2" class="notSpace"> Deceo recibir correos del administrador. <br>
+
+
+            <br><br><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </fieldset>
+    </form>
+    
+    
+</body>
+</html>
