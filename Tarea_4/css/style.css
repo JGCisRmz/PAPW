@@ -2,6 +2,10 @@ body{
     background-image: url("../../Tarea_3/img/background.jpg")
 }
 
+h1{
+    color: white;
+}
+
 .TopMenu {
     list-style-type: none;
     margin: 0;
