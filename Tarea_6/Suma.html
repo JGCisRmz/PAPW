@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Suma de Numero</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <ul class="TopMenu">
+                <li><a href="../Tarea_4/index.html">Inicio</a></li>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="#Ventas">Ventas</a></li>
+                <li><a href="#Galeria">Galeria</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a href="#Categorias" class="dropbtn">Categorias</a>
+                        <div class="dropdown-content">
+                                <a href="#Musica">Musica</a> 
+                                <a href="#Electronica">Electronica</a> 
+                                <a href="#Videojuegos">Videojuegos</a>
+                        </div>
+                    </div>
+                        
+                   
+                </li>
+                <li><a href="../Tarea_5/Login.html">Login</a></li>
+                <li><a href="Suma.html">Tarea 06</a></li>
+                <li id="derecha"><a href="../Tarea_3/index.html">Perfil</a></li>
+            </ul>
+            <br><br><br>
+
+    <div> 
+        <h2>Instrucciones:</h3>
+        <p>Calcular la suma <b><i>S</i></b> de los primeros <b><i>N</i></b> números naturales consecutivos.</p>
+        <br><br>
+    </div>
+
+    <form > 
+        <fieldset>
+                <label>Ingrese la cantidad de números a sumar: </label> 
+                <input type="number" id="Cantidad" required>
+        
+                <br><br>
+                <input type="button" onclick="SumaDeNumeros()" value="Realizar Suma">
+        </fieldset>
+    </form>
+    <br>
+    <p id="ResultadoSuma">Ingrese un valor por favor...</p>
+
+
+    <script>
+        function SumaDeNumeros(){
+            var n = document.getElementById("Cantidad").value;
+            console.log(n);
+            var resultado = (+n * (+n + 1)) / 2;
+            var e = document.getElementById("ResultadoSuma");
+            e.innerHTML = "La Suma de los primeros "+ 6 + " numeros naturales es: "+resultado;
+        }
+    </script>
+</body>
+</html>
