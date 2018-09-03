@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Perfil</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../Baner.png" width="80px"> Inicio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarResponsive">
+            
+        
+            <div class="input-group col-sm-4 justify-conten">
+                <input type="text" class="form-control" placeholder="Buscar" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary Text_White" type="button" id="BTN_BuscarDesc">Buscar</button>
+                </div>
+            </div>
+
+            <ul class="navbar-nav ml-auto">           
+                    <li class="nav-item active">
+                    <a class=" navbar-brand" href="perfil.html"><img src="../img/Avatar.jpg" alt="no-avatar" width="50px"> Perfil
+                    </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="agregar_producto.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="historial.html">Historial</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="carrito_de_compras.html">Carrito</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Salir</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Fin Navbar Top-->
+<br><br>
+<div class="container-fluid Header-IMG" style="margin-bottom:0">
+        <a href="../index.html"><img src="../img/Portada.png" alt="imagen no encontrada"></a>
+    </div>
+
+
+ <!-- Content -->
+ <br>
+ <div class="container">   
+    <font>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="">Nombre del Producto</label>
+                <input type="text" class="form-control" placeholder="Ingrese el nombre del producto" required>
+
+                <label for="">Precio</label>
+                <input type="number" class="form-control" placeholder="Ingrese el precio del producto" required>
+
+                <label for="">Categoria</label>
+                <select class="form-control" id="" required>
+                        <option>Categoria 1</option>
+                        <option>Categoria 2</option>
+                        <option>Categoria 3</option>
+                        <option>Categoria 4</option>
+                        <option>Categoria 5</option>
+                </select>
+
+                <label for="">Descripcion</label>
+                <textarea class="form-control" name="" id="" cols="30" rows="5" placeholder="Favor de ingresar una descripcion del producto" required></textarea>
+            </div>
+            <div class="form-group col-md-1"></div>
+            <div class="form-group col-md-5">
+                <img src="../img/no-image.jpg" alt="" width="80%" height="350px" ><br>
+                <br> <input type="file"  required>
+            </div>
+        </div>
+        <div class="container ">
+            <button type="button" class="btn btn-primary">Publicar</button> 
+            <button type="button" class="btn btn-success">Guardar</button> 
+            <button type="button" class="btn btn-danger">Eliminar</button> 
+        </div>
+    </font>
+
+    <br><br><br>
+    <div class="row">
+        <h3>Productos en Venta</h3>
+        <div class="container">
+            <div class="col-auto-4">
+                    <div class="card-deck">
+                            <div class="card">
+                                <a href=""><img class="card-img-top" src="../Shooting Disc.png" alt="Card image cap"></a> 
+                                <div class="card-body">
+                                <h5 class="card-title">Producto 01</h5>
+                                <p class="card-text precio">$ 50.99</p>
+                                <p class="card-text"><small class="text-muted">Categoria</small></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href=""><img class="card-img-top" src="../Shooting Disc.png" alt="Card image cap"></a> 
+                                <div class="card-body">
+                                <h5 class="card-title">Producto 02</h5>
+                                <p class="card-text precio">$ 50.99</p>
+                                <p class="card-text"><small class="text-muted">Categoria</small></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href=""><img class="card-img-top" src="../Shooting Disc.png" alt="Card image cap"></a> 
+                                <div class="card-body">
+                                <h5 class="card-title">Producto 03</h5>
+                                <p class="card-text precio">$ 50.99</p>
+                                <p class="card-text"><small class="text-muted">Categoria</small></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href=""><img class="card-img-top" src="../Shooting Disc.png" alt="Card image cap"></a> 
+                                <div class="card-body">
+                                    <h5 class="card-title">Producto 04</h5>
+                                    <p class="card-text precio">$ 50.99</p>
+                                    <p class="card-text"><small class="text-muted">Categoria</small></p>
+                                </div>
+                             </div>
+                        </div>
+            </div>
+        </div>
+    </div>
+
+    <br> <br>
+    <div class="row">
+            <h3>Productos en Borrador</h3>
+            <div class="container">
+                <div class="col-auto-4">
+                        <div class="card-deck">
+                                <div class="card">
+                                    <img class="card-img-top" src="../Shooting Disc.png" alt="Card image cap">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Producto 01</h5>
+                                    <p class="card-text precio">$ 50.99</p>
+                                    <p class="card-text"><small class="text-muted">Categoria</small></p>
+                                    <a href="#" class="btn btn-primary">Editar</a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../Shooting Disc.png" alt="Card image cap">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Producto 02</h5>
+                                    <p class="card-text precio">$ 50.99</p>
+                                    <p class="card-text"><small class="text-muted">Categoria</small></p>
+                                    <a href="#" class="btn btn-primary">Editar</a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../Shooting Disc.png" alt="Card image cap">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Producto 03</h5>
+                                    <p class="card-text precio">$ 50.99</p>
+                                    <p class="card-text"><small class="text-muted">Categoria</small></p>
+                                    <a href="#" class="btn btn-primary">Editar</a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../Shooting Disc.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Producto 04</h5>
+                                        <p class="card-text precio">$ 50.99</p>
+                                        <p class="card-text"><small class="text-muted">Categoria</small></p>
+                                        <a href="#" class="btn btn-primary">Editar</a>
+                                    </div>
+                                 </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+
+
+    <!--FIN CONTENT-->     
+ </div>
+<!--FIN CONTENT-->
+ 
+
+<!-- Fin Navbar Left-->
+
+<br><br>
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p></p>
+</div>
+
+</body>
+</html>

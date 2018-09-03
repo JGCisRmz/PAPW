@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Proyecto PAPW</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="Baner.png" width="80px">Inicio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarResponsive">
+            
+        
+            <div class="input-group col-sm-4 justify-conten">
+                <input type="text" class="form-control" placeholder="Buscar" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary Text_White" type="button" id="BTN_BuscarDesc">Buscar</button>
+                </div>
+            </div>
+
+            <ul class="navbar-nav ml-auto">           
+                    <li class="nav-item active">
+                    <a class=" navbar-brand" href="paginas/perfil.html"><img src="img/Avatar.jpg" alt="no-avatar" width="50px"> Perfil
+                    </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="paginas/agregar_producto.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="paginas/historial.html">Historial</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="paginas/carrito_de_compras.html">Carrito</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Salir</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Fin Navbar Top-->
+<br><br>
+<div class="container-fluid Header-IMG" style="margin-bottom:0">
+        <a href=""><img src="img/Portada.png" alt="imagen no encontrada"></a>
+    </div>
+ <!-- Content -->
+ <br>
+ <div class="container-fluid">
+    <div class="row">
+         <!--Menu Categorias-->
+        <div class="Left-Menu col-lg-2">
+            <h2>Categorias</h2>
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action">Categoria 1</a>
+                <a href="#" class="list-group-item list-group-item-action">Categoria 2</a>
+                <a href="#" class="list-group-item list-group-item-action">Categoria 3</a>
+                <a href="#" class="list-group-item list-group-item-action">Categoria 4</a>
+                <a href="#" class="list-group-item list-group-item-action">Categoria 5</a>
+            </div> 
+        </div>
+        
+        <!-- Carousel-->
+        <div id="demo" class="container-fluid carousel slide col-lg-10" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href=""><img src="Carrusel.png" alt="Producto-Especial01" width="1100" height="500"></a>
+                <div class="carousel-caption">
+                    <h3>Producto-Especial 01</h3>
+                    <p>Gran Oferta -50% de descuento</p>
+                </div>   
+                </div>
+                <div class="carousel-item">
+                <a href=""><img src="Carrusel.png" alt="Producto-Especial01" width="1100" height="500"></a>
+                <div class="carousel-caption">
+                    <h3>Producto-Especial 02</h3>
+                    <p>Gran Oferta -50% de descuento</p>
+                </div>   
+                </div>
+                <div class="carousel-item">
+                <a href=""><img src="Carrusel.png" alt="Producto-Especial01" width="1100" height="500"></a>
+                <div class="carousel-caption">
+                    <h3>Producto-Especial 03</h3>
+                    <p>Gran Oferta -50% de descuento</p>
+                </div>   
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+     </div>
+     <br><br>
+     <div class="row">
+            <div class="col-lg-2"></div>
+        <div class="container col-lg-10">
+            <div class="card-deck">
+                <div class="card">
+                    <a href=""><img class="card-img-top" src="Shooting Disc.png" alt="Card image cap"></a> 
+                    <div class="card-body">
+                    <h5 class="card-title">Producto 01</h5>
+                    <p class="card-text precio">$ 50.99</p>
+                    <p class="card-text"><small class="text-muted">Categoria</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href=""><img class="card-img-top" src="Shooting Disc.png" alt="Card image cap"></a> 
+                    <div class="card-body">
+                    <h5 class="card-title">Producto 02</h5>
+                    <p class="card-text precio">$ 50.99</p>
+                    <p class="card-text"><small class="text-muted">Categoria</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href=""><img class="card-img-top" src="Shooting Disc.png" alt="Card image cap"></a> 
+                    <div class="card-body">
+                    <h5 class="card-title">Producto 03</h5>
+                    <p class="card-text precio">$ 50.99</p>
+                    <p class="card-text"><small class="text-muted">Categoria</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href=""><img class="card-img-top" src="Shooting Disc.png" alt="Card image cap"></a> 
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 04</h5>
+                        <p class="card-text precio">$ 50.99</p>
+                        <p class="card-text"><small class="text-muted">Categoria</small></p>
+                    </div>
+                 </div>
+            </div>
+                      
+        </div>
+
+        </div>
+        <br><br>
+        <div class="row">
+                <div class="col-lg-2"></div>
+            <div class="container col-lg-10">
+                <div class="card-deck">
+                    <div class="card">
+                        <a href=""><img class="card-img-top" src="Shooting Disc.png" alt="Card image cap"></a> 
+                        <div class="card-body">
+                        <h5 class="card-title">Producto 01</h5>
+                        <p class="card-text precio">$ 50.99</p>
+                        <p class="card-text"><small class="text-muted">Categoria</small></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href=""><img class="card-img-top" src="Shooting Disc.png" alt="Card image cap"></a> 
+                        <div class="card-body">
+                        <h5 class="card-title">Producto 02</h5>
+                        <p class="card-text precio">$ 50.99</p>
+                        <p class="card-text"><small class="text-muted">Categoria</small></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href=""><img class="card-img-top" src="Shooting Disc.png" alt="Card image cap"></a> 
+                        <div class="card-body">
+                        <h5 class="card-title">Producto 03</h5>
+                        <p class="card-text precio">$ 50.99</p>
+                        <p class="card-text"><small class="text-muted">Categoria</small></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href=""><img class="card-img-top" src="Shooting Disc.png" alt="Card image cap"></a> 
+                        <div class="card-body">
+                            <h5 class="card-title">Producto 04</h5>
+                            <p class="card-text precio">$ 50.99</p>
+                            <p class="card-text"><small class="text-muted">Categoria</small></p>
+                        </div>
+                     </div>
+                </div>
+                          
+            </div>
+    
+            </div>
+
+
+
+<!--FIN CONTENT-->     
+ </div>
+<!--FIN CONTENT-->
+ 
+
+<!-- Fin Navbar Left-->
+
+<br><br>
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p></p>
+</div>
+
+</body>
+</html>
