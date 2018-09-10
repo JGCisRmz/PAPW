@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <title>Producto</title>
   <meta charset="utf-8">
@@ -24,42 +24,43 @@
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html"><img src="../Baner.png" width="80px"> Inicio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarResponsive">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../Baner.png" width="80px"> Inicio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarResponsive">
+                
             
-        
-            <div class="input-group col-sm-4 justify-conten">
-                <input type="text" class="form-control" placeholder="Buscar" aria-label="Recipient's username" aria-describedby="button-addon2">
-                <div class="input-group-append">
-                    <button class="btn btn-outline-secondary Text_White" type="button" id="BTN_BuscarDesc">Buscar</button>
+                <div class="input-group col-sm-4 justify-conten">
+                    <input type="text" class="form-control" placeholder="Buscar" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary Text_White" type="button" id="BTN_BuscarDesc">Buscar</button>
+                    </div>
                 </div>
-            </div>
+    
+                <ul class="navbar-nav ml-auto">           
+                        <li class="nav-item active" id="NavAvatar">
+                        <a class=" navbar-brand" href="perfil.html"><img src="../img/Avatar.jpg" alt="no-avatar" width="50px"> Perfil
+                        </a>
+                        </li>
+                        <li class="nav-item " id="NavProducto">
+                            <a class="nav-link" href="agregar_producto.html">Productos</a>
+                        </li>
+                        <li class="nav-item " id="NavHistoria">
+                        <a class="nav-link" href="historial.html">Historial</a>
+                        </li>
+                        <li class="nav-item" id="NavCarrito">
+                        <a class="nav-link" href="carrito_de_compras.html">Carrito</a>
+                        </li>
+                        <li class="nav-item" id="NavSalir">
+                        <a class="nav-link"  href="logIn.html">Salir</a>
 
-            <ul class="navbar-nav ml-auto">           
-                    <li class="nav-item active">
-                    <a class=" navbar-brand" href=""><img src="../img/Avatar.jpg" alt="no-avatar" width="50px"> Perfil
-                    </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="agregar_producto.html">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="historial.html">Historial</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="carrito_de_compras.html">Carrito</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Salir</a>
-                    </li>
-            </ul>
+    
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 <!-- Fin Navbar Top-->
 <br><br>
 <div class="container-fluid Header-IMG" style="margin-bottom:0">
@@ -150,28 +151,6 @@
   <p></p>
 </div>
 
-
-
-<script>
-        $("#Estrellas").starrr({
-          rating:3,
-        });
-
-    $(document).ready(function(){
-        $("#btnComentar").click(function(){
-            
-            var text = $("#cbox").val();
-
-            var add ="<p>"+text+"<p> <small class='text-muted'> Anonymous - 3/1/17</small> <hr>";
-            
-            $("#Comentario-Contenedor").append(add);
-
-
-        });
-    });
-
-
-</script>
 
 </body>
 </html>

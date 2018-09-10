@@ -96,3 +96,23 @@ var slice = [].slice;
     }
   });
 })(window.jQuery, window);
+
+
+
+$(document).ready(function(){
+  $("#btnComentar").click(function(){
+      
+      var text = $("#cbox").val();
+      if(text!=""){
+          var add ="<p>"+text+"<p> <small class='text-muted'> Anonymous - 3/1/17</small> <hr>";
+          $("#Comentario-Contenedor").append(add);
+          $("#cbox").val(null);
+      }
+
+  });
+
+
+  $("#Estrellas").starrr({
+    rating:3,
+  });
+});

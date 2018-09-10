@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>Perfil</title>
+  <title>Nuevo Producto</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -16,42 +16,43 @@
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html"><img src="../Baner.png" width="80px"> Inicio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarResponsive">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../Baner.png" width="80px"> Inicio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarResponsive">
+                
             
-        
-            <div class="input-group col-sm-4 justify-conten">
-                <input type="text" class="form-control" placeholder="Buscar" aria-label="Recipient's username" aria-describedby="button-addon2">
-                <div class="input-group-append">
-                    <button class="btn btn-outline-secondary Text_White" type="button" id="BTN_BuscarDesc">Buscar</button>
+                <div class="input-group col-sm-4 justify-conten">
+                    <input type="text" class="form-control" placeholder="Buscar" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary Text_White" type="button" id="BTN_BuscarDesc">Buscar</button>
+                    </div>
                 </div>
-            </div>
+    
+                <ul class="navbar-nav ml-auto">           
+                        <li class="nav-item active" id="NavAvatar">
+                        <a class=" navbar-brand" href="perfil.html"><img src="../img/Avatar.jpg" alt="no-avatar" width="50px"> Perfil
+                        </a>
+                        </li>
+                        <li class="nav-item " id="NavProducto">
+                            <a class="nav-link" href="agregar_producto.html">Productos</a>
+                        </li>
+                        <li class="nav-item " id="NavHistoria">
+                        <a class="nav-link" href="historial.html">Historial</a>
+                        </li>
+                        <li class="nav-item" id="NavCarrito">
+                        <a class="nav-link" href="carrito_de_compras.html">Carrito</a>
+                        </li>
+                        <li class="nav-item" id="NavSalir">
+                        <a class="nav-link"  href="logIn.html">Salir</a>
 
-            <ul class="navbar-nav ml-auto">           
-                    <li class="nav-item active">
-                    <a class=" navbar-brand" href="perfil.html"><img src="../img/Avatar.jpg" alt="no-avatar" width="50px"> Perfil
-                    </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="agregar_producto.html">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="historial.html">Historial</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="carrito_de_compras.html">Carrito</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Salir</a>
-                    </li>
-            </ul>
+    
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 <!-- Fin Navbar Top-->
 <br><br>
 <div class="container-fluid Header-IMG" style="margin-bottom:0">
@@ -66,13 +67,13 @@
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="">Nombre del Producto</label>
-                <input type="text" class="form-control" placeholder="Ingrese el nombre del producto" required>
+                <input type="text" class="form-control" id="NuevoProducto" placeholder="Ingrese el nombre del producto" required>
 
                 <label for="">Precio</label>
-                <input type="number" class="form-control" placeholder="Ingrese el precio del producto" required>
+                <input type="number" class="form-control" id="NuevoPrecio" placeholder="Ingrese el precio del producto" required>
 
                 <label for="">Categoria</label>
-                <select class="form-control" id="" required>
+                <select class="form-control" id="Categoria" required>
                         <option>Categoria 1</option>
                         <option>Categoria 2</option>
                         <option>Categoria 3</option>
@@ -81,7 +82,7 @@
                 </select>
 
                 <label for="">Descripcion</label>
-                <textarea class="form-control" name="" id="" cols="30" rows="5" placeholder="Favor de ingresar una descripcion del producto" required></textarea>
+                <textarea class="form-control" name="" id="Producto-Descripcion" cols="30" rows="5" placeholder="Favor de ingresar una descripcion del producto" required></textarea>
             </div>
             <div class="form-group col-md-1"></div>
             <div class="form-group col-md-5">
@@ -90,9 +91,9 @@
             </div>
         </div>
         <div class="container ">
-            <button type="button" class="btn btn-primary">Publicar</button> 
-            <button type="button" class="btn btn-success">Guardar</button> 
-            <button type="button" class="btn btn-danger">Eliminar</button> 
+            <button type="button" class="btn btn-primary" id="Publicar">Publicar</button> 
+            <button type="button" class="btn btn-success" id="Guardar">Guardar</button> 
+            <button type="button" class="btn btn-danger" id="Eliminar">Eliminar</button> 
         </div>
     </font>
 
@@ -198,6 +199,14 @@
 <div class="jumbotron text-center" style="margin-bottom:0">
   <p></p>
 </div>
+
+<script>
+    $(document).ready(function(){
+
+
+    });
+
+</script>
 
 </body>
 </html>

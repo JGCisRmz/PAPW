@@ -65,6 +65,13 @@ body{
     background-color: white;
 }
 
+#Registro-Header{
+   text-align: center;
+   color: black;
+   
+}
+
+
 
 #producto{
     display: block; 
@@ -79,6 +86,7 @@ body{
 #contenido{
     background-color: rgb(230, 230, 230);
     border-radius: 20px;
+    padding-top: 10px;
 }
 
 
