@@ -61,3 +61,48 @@ body{
     font-weight: bold;
 }
 
+.registro{
+    background-color: white;
+}
+
+
+#producto{
+    display: block; 
+    height: 70%;
+    width: 70%;
+  
+    margin-left: 18%;
+    margin-right: 30%;
+    border: 5px solid rgb(0, 0, 0);
+}
+
+#contenido{
+    background-color: rgb(230, 230, 230);
+    border-radius: 20px;
+}
+
+
+
+.starrr {
+    display: inline-block; 
+}
+.starrr a {
+    font-size: 16px;
+    padding: 0 1px;
+    cursor: pointer;
+    color: #FFD119;
+    text-decoration: none; 
+}
+
+#btnComentar{
+    float: right;
+}
+
+#cbox{
+    width: 100%;
+}
+.carousel-inner img{
+    width: 100%;
+    height: 450px;
+}
+

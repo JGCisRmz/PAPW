@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Producto</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
+  <script src="scripts/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../scripts/starrr.js"></script>
+  <link rel="stylesheet" href="../css/start.css">
+  <script src="../scripts/start.js"></script>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+<body>
+
+
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../Baner.png" width="80px"> Inicio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarResponsive">
+            
+        
+            <div class="input-group col-sm-4 justify-conten">
+                <input type="text" class="form-control" placeholder="Buscar" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary Text_White" type="button" id="BTN_BuscarDesc">Buscar</button>
+                </div>
+            </div>
+
+            <ul class="navbar-nav ml-auto">           
+                    <li class="nav-item active">
+                    <a class=" navbar-brand" href=""><img src="../img/Avatar.jpg" alt="no-avatar" width="50px"> Perfil
+                    </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="agregar_producto.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="historial.html">Historial</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="carrito_de_compras.html">Carrito</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Salir</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Fin Navbar Top-->
+<br><br>
+<div class="container-fluid Header-IMG" style="margin-bottom:0">
+        <a href="../index.html"><img src="../img/Portada.png" alt="imagen no encontrada"></a>
+</div>
+
+
+
+ <!-- Content -->
+ <br>
+ <div class="container">
+     
+        <div id="contenido">    
+            <br>
+                <div class="card1">
+                    <img id="producto" class="card-img-top" src="../img/producto.jpg" alt="">
+                 
+                </div>
+                <br><br><hr>
+                 
+                  <div class="card-body">
+                    <h3 class="card-title" id="Titulo">Producto 01</h3>
+                    <h4>$25.99</h4>
+                    <p class="card-text">Descripcion: </p>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dicta fugit fugiat hic aliquam itaque facere, soluta. Totam id dolores, sint aperiam sequi pariatur praesentium animi perspiciatis molestias iure, ducimus!</p>
+                   
+                    <div id="casaEstrellas" >
+                            <b>Calificacion: </b> <span id="Estrellas"></span>
+                    </div>
+                
+                    <hr>
+                    <div>
+                        <div class="Cantidad lg-2">
+                                <label>Cantidad</label><br>
+                                <input class="CantidadPedido"type="number" value="1" max="10" name="Pedido" id="idPedido">
+                            </div>
+                            <br>
+                        <div class="btn-group lg-2">
+                            <a class="btn icon-btn btn-primary"  href="#" ><span>Agregar al Carrito</span></a>
+                        </div>
+
+                    </div>
+                  
+                    
+                    
+                    <br><br><hr>
+                    <div class="card card-outline-secondary my-6">
+                          <div class="card-header">
+                            Comentarios
+                          </div>
+                          <div class="card-body">
+                            <div id="Comentario-Contenedor">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
+                                <small class="text-muted">Anonymous - 3/1/17</small>
+                                <hr>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
+                                <small class="text-muted">Anonymous - 3/1/17</small>
+                                <hr>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
+                                <small class="text-muted">Anonymous - 3/1/17</small>
+                                <hr>
+                            </div>
+                           
+                            <textarea name="comentario" id="cbox" rows="3" placeholder="Comentarios"></textarea>
+                            <br><br>
+                            <small class="text-muted">Usuario</small>
+                            <spam id="btnComentar" class="btn btn-info justify-conten-right">Comentar</spam>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+
+
+    <br><br><br>
+    
+    
+
+
+    <!--FIN CONTENT-->     
+ </div>
+<!--FIN CONTENT-->
+ 
+
+<!-- Fin Navbar Left-->
+
+<br><br>
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p></p>
+</div>
+
+
+
+<script>
+        $("#Estrellas").starrr({
+          rating:3,
+        });
+
+    $(document).ready(function(){
+        $("#btnComentar").click(function(){
+            
+            var text = $("#cbox").val();
+
+            var add ="<p>"+text+"<p> <small class='text-muted'> Anonymous - 3/1/17</small> <hr>";
+            
+            $("#Comentario-Contenedor").append(add);
+
+
+        });
+    });
+
+
+</script>
+
+</body>
+</html>
